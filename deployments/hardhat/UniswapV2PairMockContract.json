@@ -1,0 +1,224 @@
+{
+  "address": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "getReserves",
+      "outputs": [
+        {
+          "internalType": "uint112",
+          "name": "",
+          "type": "uint112"
+        },
+        {
+          "internalType": "uint112",
+          "name": "",
+          "type": "uint112"
+        },
+        {
+          "internalType": "uint32",
+          "name": "",
+          "type": "uint32"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token0_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token1_",
+          "type": "address"
+        },
+        {
+          "internalType": "uint112",
+          "name": "res0",
+          "type": "uint112"
+        },
+        {
+          "internalType": "uint112",
+          "name": "res1",
+          "type": "uint112"
+        }
+      ],
+      "name": "init",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reserve0",
+      "outputs": [
+        {
+          "internalType": "uint112",
+          "name": "",
+          "type": "uint112"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "reserve1",
+      "outputs": [
+        {
+          "internalType": "uint112",
+          "name": "",
+          "type": "uint112"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint112",
+          "name": "res0",
+          "type": "uint112"
+        },
+        {
+          "internalType": "uint112",
+          "name": "res1",
+          "type": "uint112"
+        }
+      ],
+      "name": "setReserves",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "token0_",
+          "type": "address"
+        },
+        {
+          "internalType": "address",
+          "name": "token1_",
+          "type": "address"
+        }
+      ],
+      "name": "setTokens",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "token0",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "token1",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "transactionHash": "0x87ae02bfd1396e93b81ad3287835648387567073519543ffd0a6a5a5092b634a",
+  "receipt": {
+    "to": null,
+    "from": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+    "contractAddress": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+    "transactionIndex": 0,
+    "gasUsed": "246374",
+    "logsBloom": "0x00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000",
+    "blockHash": "0xe64ced7b8405ac1a4e6b4a32c0ed1da0a3bf2c12096e272120e583255fbc2010",
+    "transactionHash": "0x87ae02bfd1396e93b81ad3287835648387567073519543ffd0a6a5a5092b634a",
+    "logs": [],
+    "blockNumber": 3,
+    "cumulativeGasUsed": "246374",
+    "status": 1,
+    "byzantium": true
+  },
+  "args": [],
+  "numDeployments": 1,
+  "solcInputHash": "7a11c3c02bba804b24893b4cd3c18587",
+  "metadata": "{\"compiler\":{\"version\":\"0.8.9+commit.e5eed63a\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"name\":\"getReserves\",\"outputs\":[{\"internalType\":\"uint112\",\"name\":\"\",\"type\":\"uint112\"},{\"internalType\":\"uint112\",\"name\":\"\",\"type\":\"uint112\"},{\"internalType\":\"uint32\",\"name\":\"\",\"type\":\"uint32\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token0_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1_\",\"type\":\"address\"},{\"internalType\":\"uint112\",\"name\":\"res0\",\"type\":\"uint112\"},{\"internalType\":\"uint112\",\"name\":\"res1\",\"type\":\"uint112\"}],\"name\":\"init\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"reserve0\",\"outputs\":[{\"internalType\":\"uint112\",\"name\":\"\",\"type\":\"uint112\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"reserve1\",\"outputs\":[{\"internalType\":\"uint112\",\"name\":\"\",\"type\":\"uint112\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"uint112\",\"name\":\"res0\",\"type\":\"uint112\"},{\"internalType\":\"uint112\",\"name\":\"res1\",\"type\":\"uint112\"}],\"name\":\"setReserves\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[{\"internalType\":\"address\",\"name\":\"token0_\",\"type\":\"address\"},{\"internalType\":\"address\",\"name\":\"token1_\",\"type\":\"address\"}],\"name\":\"setTokens\",\"outputs\":[],\"stateMutability\":\"nonpayable\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token0\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"},{\"inputs\":[],\"name\":\"token1\",\"outputs\":[{\"internalType\":\"address\",\"name\":\"\",\"type\":\"address\"}],\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"contracts/mocks/UniswapV2PairMockContract.sol\":\"UniswapV2PairMockContract\"},\"evmVersion\":\"london\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\",\"useLiteralContent\":true},\"optimizer\":{\"enabled\":true,\"runs\":200},\"remappings\":[]},\"sources\":{\"contracts/mocks/UniswapV2PairMockContract.sol\":{\"content\":\"// SPDX-License-Identifier: MIT\\r\\npragma solidity >=0.8.0 <0.9.0;\\r\\n\\r\\ncontract UniswapV2PairMockContract {\\r\\n\\taddress public token0;\\r\\n\\taddress public token1;\\r\\n\\tuint112 public reserve0 = 1 * 10 ** 18;\\r\\n\\tuint112 public reserve1 = 1 * 10 ** 18;\\r\\n\\r\\n\\tfunction getReserves() public view returns (uint112, uint112, uint32) {\\r\\n\\t\\treturn (reserve0, reserve1, 0);\\r\\n\\t}\\r\\n\\r\\n\\tfunction setReserves(uint112 res0, uint112 res1) public {\\r\\n\\t\\treserve0 = res0;\\r\\n\\t\\treserve1 = res1;\\r\\n\\t}\\r\\n\\r\\n\\tfunction setTokens(address token0_, address token1_) public {\\r\\n\\t\\ttoken0 = token0_;\\r\\n\\t\\ttoken1 = token1_;\\r\\n\\t}\\r\\n\\r\\n\\tfunction init(\\r\\n\\t\\taddress token0_,\\r\\n\\t\\taddress token1_,\\r\\n\\t\\tuint112 res0,\\r\\n\\t\\tuint112 res1\\r\\n\\t) public {\\r\\n\\t\\tsetTokens(token0_, token1_);\\r\\n\\t\\tsetReserves(res0, res1);\\r\\n\\t}\\r\\n}\\r\\n\",\"keccak256\":\"0x1f29e4f24b49d04d5e84df54d15e1f258d988d739e80b045ee0d4be87a2728d1\",\"license\":\"MIT\"}},\"version\":1}",
+  "bytecode": "0x6080604052600280546001600160e01b031916750de0b6b3a76400000000000000000de0b6b3a764000017905534801561003857600080fd5b50610315806100486000396000f3fe608060405234801561001057600080fd5b50600436106100885760003560e01c80635a76f25e1161005b5780635a76f25e1461012f57806375ea5f2e14610149578063cbc7854e1461015c578063d21220a71461016f57600080fd5b80630902f1ac1461008d5780630dfe1681146100c45780633fd5070e146100ef578063443cb4bc14610104575b600080fd5b600254604080516001600160701b038084168252600160701b90930490921660208301526000908201526060015b60405180910390f35b6000546100d7906001600160a01b031681565b6040516001600160a01b0390911681526020016100bb565b6101026100fd36600461022e565b610182565b005b600254610117906001600160701b031681565b6040516001600160701b0390911681526020016100bb565b60025461011790600160701b90046001600160701b031681565b610102610157366004610282565b61019c565b61010261016a3660046102b5565b6101cd565b6001546100d7906001600160a01b031681565b61018c84846101cd565b610196828261019c565b50505050565b600280546001600160701b03928316600160701b026001600160e01b03199091169290931691909117919091179055565b600080546001600160a01b039384166001600160a01b03199182161790915560018054929093169116179055565b80356001600160a01b038116811461021257600080fd5b919050565b80356001600160701b038116811461021257600080fd5b6000806000806080858703121561024457600080fd5b61024d856101fb565b935061025b602086016101fb565b925061026960408601610217565b915061027760608601610217565b905092959194509250565b6000806040838503121561029557600080fd5b61029e83610217565b91506102ac60208401610217565b90509250929050565b600080604083850312156102c857600080fd5b6102d1836101fb565b91506102ac602084016101fb56fea264697066735822122088b4aa4c73bbaa1f76925c7976f6ec4a2c3d99cf505ff3dae0f5b5a52b61f09e64736f6c63430008090033",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100885760003560e01c80635a76f25e1161005b5780635a76f25e1461012f57806375ea5f2e14610149578063cbc7854e1461015c578063d21220a71461016f57600080fd5b80630902f1ac1461008d5780630dfe1681146100c45780633fd5070e146100ef578063443cb4bc14610104575b600080fd5b600254604080516001600160701b038084168252600160701b90930490921660208301526000908201526060015b60405180910390f35b6000546100d7906001600160a01b031681565b6040516001600160a01b0390911681526020016100bb565b6101026100fd36600461022e565b610182565b005b600254610117906001600160701b031681565b6040516001600160701b0390911681526020016100bb565b60025461011790600160701b90046001600160701b031681565b610102610157366004610282565b61019c565b61010261016a3660046102b5565b6101cd565b6001546100d7906001600160a01b031681565b61018c84846101cd565b610196828261019c565b50505050565b600280546001600160701b03928316600160701b026001600160e01b03199091169290931691909117919091179055565b600080546001600160a01b039384166001600160a01b03199182161790915560018054929093169116179055565b80356001600160a01b038116811461021257600080fd5b919050565b80356001600160701b038116811461021257600080fd5b6000806000806080858703121561024457600080fd5b61024d856101fb565b935061025b602086016101fb565b925061026960408601610217565b915061027760608601610217565b905092959194509250565b6000806040838503121561029557600080fd5b61029e83610217565b91506102ac60208401610217565b90509250929050565b600080604083850312156102c857600080fd5b6102d1836101fb565b91506102ac602084016101fb56fea264697066735822122088b4aa4c73bbaa1f76925c7976f6ec4a2c3d99cf505ff3dae0f5b5a52b61f09e64736f6c63430008090033",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  },
+  "storageLayout": {
+    "storage": [
+      {
+        "astId": 3211,
+        "contract": "contracts/mocks/UniswapV2PairMockContract.sol:UniswapV2PairMockContract",
+        "label": "token0",
+        "offset": 0,
+        "slot": "0",
+        "type": "t_address"
+      },
+      {
+        "astId": 3213,
+        "contract": "contracts/mocks/UniswapV2PairMockContract.sol:UniswapV2PairMockContract",
+        "label": "token1",
+        "offset": 0,
+        "slot": "1",
+        "type": "t_address"
+      },
+      {
+        "astId": 3220,
+        "contract": "contracts/mocks/UniswapV2PairMockContract.sol:UniswapV2PairMockContract",
+        "label": "reserve0",
+        "offset": 0,
+        "slot": "2",
+        "type": "t_uint112"
+      },
+      {
+        "astId": 3227,
+        "contract": "contracts/mocks/UniswapV2PairMockContract.sol:UniswapV2PairMockContract",
+        "label": "reserve1",
+        "offset": 14,
+        "slot": "2",
+        "type": "t_uint112"
+      }
+    ],
+    "types": {
+      "t_address": {
+        "encoding": "inplace",
+        "label": "address",
+        "numberOfBytes": "20"
+      },
+      "t_uint112": {
+        "encoding": "inplace",
+        "label": "uint112",
+        "numberOfBytes": "14"
+      }
+    }
+  }
+}
