@@ -1,20 +1,7 @@
 # guildsworn-priceresolver-contracts
 
 
-# Installing the package
-## 1. Creating Personal access token (classic) on GitHub
-https://github.com/settings/tokens
-## 2. Preparing env
-Create an `.npmrc` file in the same location as the `package.json` with this content.
-```
-registry=https://registry.yarnpkg.com/
-
-@guildsworn:registry=https://npm.pkg.github.com
-//npm.pkg.github.com/:_authToken=<your personal access token>
-always-auth=true
-
-```
-## 3. Installing the package
+## Installing the package
 ```shell
 npm install @guildsworn/token-contracts
 ```
@@ -68,5 +55,4 @@ npx hardhat deploy --write true --network oasis_sapphire_mainnet --tags oracle
 ```shell
 cd contracts/ && yarn prepare
 yarn publish --access public
-npm publish --access public
 ```
