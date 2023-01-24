@@ -397,10 +397,10 @@
     "@ethersproject/properties" "^5.7.0"
     "@ethersproject/strings" "^5.7.0"
 
-"@guildsworn/token-contracts@^1.0.8":
-  version "1.0.8"
-  resolved "https://npm.pkg.github.com/download/@guildsworn/token-contracts/1.0.8/eff2764376130e6eb3b6a441c236d53bc4a54f31#eff2764376130e6eb3b6a441c236d53bc4a54f31"
-  integrity sha512-rMIgjmjnr81xii/7T5FDEWw+U5fAsiUe9NksFexi4hBIm2cMJpu8J2Oi8Q5cF1d404+Zma+JC8C99XKsmjp//g==
+"@guildsworn/token-contracts@^1.0.9":
+  version "1.0.9"
+  resolved "https://npm.pkg.github.com/download/@guildsworn/token-contracts/1.0.9/a576100dfdde8035a75b4b1d9d791406a639aeb8#a576100dfdde8035a75b4b1d9d791406a639aeb8"
+  integrity sha512-j7CAAu9wmQ6/oWiu7uYimTI7BlgDlsB0rwQZPTJMPtNFj4zOHfLJpg8IrnALSTuQrjn3uMZYdq9Lub4+rbSdVw==
   dependencies:
     "@openzeppelin/contracts" "^4.7.3"
 
