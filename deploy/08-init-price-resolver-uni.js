@@ -1,3 +1,5 @@
+const {getEldfallTokenAddress} = require("../helper-hardhat-config")
+
 module.exports = async ({ getNamedAccounts, deployments, network }) => {
     const { log } = deployments;
     const { deployer, admin, moderator } = await getNamedAccounts();
@@ -7,10 +9,10 @@ module.exports = async ({ getNamedAccounts, deployments, network }) => {
     let isInitialised = await priceResolverInstance.isInitialised();
     if (!isInitialised) { 
         // Initialization
-        let eldCoinInstance = await ethers.getContract("EldfallTokenContract", deployer)    
+        const eldCoinAddress = await getEldfallTokenAddress(network, deployments);         
         let uniswapV2PairContractInstance = network.dexPairAddressEldUsdt ? await ethers.getContractAt("UniswapV2PairMockContract", network.dexPairAddressEldUsdt) : await ethers.getContract("UniswapV2PairMockContract", deployer);
-        
-        let transactionResponse = await priceResolverInstance.init(admin, moderator, eldCoinInstance.address, uniswapV2PairContractInstance.address);
+                
+        let transactionResponse = await priceResolverInstance.init(admin, moderator, eldCoinAddress, uniswapV2PairContractInstance.address);
         await transactionResponse.wait(confirmations);
         log(`Initialization of PriceResolverUniV2Contract Instance at ${priceResolverInstance.address} finished.`);
     } else {

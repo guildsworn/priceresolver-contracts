@@ -1,4 +1,4 @@
-# guildsworn-token-contracts
+# guildsworn-priceresolver-contracts
 
 
 # Installing the package
@@ -56,16 +56,17 @@ npx hardhat deploy --write true --reset --tags oracle
 
 ## Deploy on Oasis Sapphire Testnet, generate deployment files
 ```shell
-npx hardhat deploy --write true --network oasis_sapphire_testnet
+npx hardhat deploy --write true --network oasis_sapphire_testnet --tags oracle
 ```
 
 ## Deploy on Oasis Sapphire Mestnet, generate deployment files
 ```shell
-npx hardhat deploy --write true --network oasis_sapphire_mainnet
+npx hardhat deploy --write true --network oasis_sapphire_mainnet --tags oracle
 ```
 
 # Publish the NPM package
 ```shell
 cd contracts/ && yarn prepare
-yarn publish
+yarn publish --access public
+npm publish --access public
 ```

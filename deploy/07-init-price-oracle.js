@@ -1,5 +1,4 @@
-const {developmentChains, ORACLE_TOKEN_PRICE,
-    ORACLE_STABLE_PRICE} = require("../helper-hardhat-config")
+const {getStableTokenAddress, getEldfallTokenAddress} = require("../helper-hardhat-config")
 
 module.exports = async ({ getNamedAccounts, deployments, network }) => {
     const { log } = deployments;
@@ -11,26 +10,14 @@ module.exports = async ({ getNamedAccounts, deployments, network }) => {
     let isInitialised = await priceResolverInstance.isInitialised();
     if (!isInitialised) { 
         // Initialization
-        let eldCoinInstance = await ethers.getContract("EldfallTokenContract", deployer)    
-        let stableTokenAddress = network.stableTokenAddress ?? "0x0000000000000000000000000000000000000000";
-        if (developmentChains.includes(network.name)) {
-            let stableCoinInstance = await deployments.get("ERC20MockContract")
-            if (!stableCoinInstance) {
-                stableTokenAddress = await ethers.getContract("ERC20MockContract", deployer).address;
-            } else {
-                stableTokenAddress = stableCoinInstance.address;
-            }
-        }
+        const eldCoinAddress = await getEldfallTokenAddress(network, deployments); 
+        const stableTokenAddress = await getStableTokenAddress(network, deployments);
 
-        let transactionResponse = await priceResolverInstance.init(admin, moderator, eldCoinInstance.address, stableTokenAddress);
+        let transactionResponse = await priceResolverInstance.init(admin, moderator, eldCoinAddress, stableTokenAddress);
         await transactionResponse.wait(confirmations);
-        log(`Initialization of PriceResolverOracleContract Instance at ${priceResolverInstance.address} finished.`);
-
-        // Set price
-        transactionResponse = await priceResolverInstance.connect(moderatorSigner).setPrice(ORACLE_TOKEN_PRICE, ORACLE_STABLE_PRICE);
-        await transactionResponse.wait(confirmations);
-        log(`Seting token and stable price on PriceResolverOracleContract Instance at ${priceResolverInstance.address} finished.`);
+        log(`Initialization of PriceResolverOracleContract Instance at ${priceResolverInstance.address} finished.`);        
     } else {
+        let isModeratorModerator = await priceResolverInstance.hasRole(await priceResolverInstance.MODERATOR_ROLE(), moderator);
         log(`Initialization of PriceResolverOracleContract already finished.`);
     }
 }

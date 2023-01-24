@@ -4,7 +4,7 @@ pragma solidity >=0.8.0 <0.9.0;
 import "@openzeppelin/contracts/access/AccessControlEnumerable.sol";
 import "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol";
 
-contract PriceResolverContract is AccessControlEnumerable {
+abstract contract PriceResolverContract is AccessControlEnumerable {
 	address internal _tokenAddress;
 	address internal _stableAddress;
 	uint256 private _tokenPrice; // How much cost 1 ELD token in stable tokens
@@ -13,10 +13,6 @@ contract PriceResolverContract is AccessControlEnumerable {
 	// **************************************************
 	// *************** DEFAULT_ADMIN REGION *************
 	// **************************************************
-	constructor() {
-		_grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
-	}
-
 	function salvageTokensFromContract(
 		address tokenAddress_,
 		address to_,
@@ -38,7 +34,7 @@ contract PriceResolverContract is AccessControlEnumerable {
 		return _tokenAddress;
 	}
 
-	function getTokenDecimals() public view returns (uint) {
+	function getTokenDecimals() public view returns (uint8) {
 		return IERC20Metadata(_tokenAddress).decimals();
 	}
 
@@ -46,17 +42,17 @@ contract PriceResolverContract is AccessControlEnumerable {
 		return _stableAddress;
 	}
 
-	function getStableDecimals() public view returns (uint) {
+	function getStableDecimals() public view returns (uint8) {
 		return IERC20Metadata(_stableAddress).decimals();
 	}
 
 	/// @notice Calculate how much cost 1 ELD token in stable tokens
-	function getTokenPrice() public virtual view returns (uint) {
+	function getTokenPrice() public view virtual returns (uint256) {
 		return _tokenPrice;
 	}
 
 	/// @notice Calculate how much cost 1 stable token in ELD tokens
-	function getStablePrice() public virtual view returns (uint) {
+	function getStablePrice() public view virtual returns (uint256) {
 		return _stablePrice;	
 	}
 

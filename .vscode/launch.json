@@ -16,12 +16,21 @@
           {
             "type": "node",
             "request": "launch",
-            "name": "hardhat deploy oasis_sapphire_testnet",
+            "name": "oasis_sapphire_testnet oracle-price",
             "skipFiles": ["<node_internals>/**"],
             "runtimeExecutable": "npx",
-            "args": ["hardhat", "deploy", "--network", "oasis_sapphire_testnet", "--write", "true"],
+            "args": ["hardhat", "deploy", "--network", "oasis_sapphire_testnet", "--write", "true", "--tags", "set-oracle-price"],
             "cwd": "${workspaceFolder}"
-          },          
+          },        
+          {
+            "type": "node",
+            "request": "launch",
+            "name": "reset oasis_sapphire_testnet",
+            "skipFiles": ["<node_internals>/**"],
+            "runtimeExecutable": "npx",
+            "args": ["hardhat", "deploy", "--network", "oasis_sapphire_testnet", "--write", "true", "--tags", "oracle", "--reset"],
+            "cwd": "${workspaceFolder}"
+          },    
           {
             "type": "node",
             "request": "launch",

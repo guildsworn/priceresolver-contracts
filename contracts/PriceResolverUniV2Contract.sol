@@ -17,6 +17,10 @@ contract PriceResolverUniV2Contract is PriceResolverContract {
 	// **************************************************
 	// *************** DEFAULT_ADMIN REGION *************
 	// **************************************************
+	constructor() {
+		_grantRole(DEFAULT_ADMIN_ROLE, _msgSender());
+	}
+
 	function init(
 		address defaultAdminAddress_,
 		address moderatorAddress_,
