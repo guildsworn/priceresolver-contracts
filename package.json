@@ -1,6 +1,6 @@
 {
   "name": "@guildsworn/priceresolver-contracts",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Price resolvers contracts for eldfal",
   "homepage": "https://www.eldfall.com/",
   "repository": {
@@ -9,9 +9,6 @@
   },
   "bugs": {
     "url": "https://github.com/guildsworn/priceresolver-contracts/issues"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
   },
   "keywords": [
     "solidity",
@@ -45,7 +42,7 @@
     "yarn": "~1.22.19"
   },
   "dependencies": {
-    "@guildsworn/token-contracts": "^1.0.9",
+    "@guildsworn/token-contracts": "^1.0.10",
     "@openzeppelin/contracts": "^4.7.3",
     "@uniswap/v2-core": "^1.0.1"
   },
