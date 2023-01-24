@@ -1,6 +1,6 @@
 {
   "name": "@guildsworn/priceresolver-contracts",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Price resolvers contracts for eldfal",
   "homepage": "https://www.eldfall.com/",
   "repository": {
@@ -45,9 +45,9 @@
     "yarn": "~1.22.19"
   },
   "dependencies": {
+    "@guildsworn/token-contracts": "^1.0.9",
     "@openzeppelin/contracts": "^4.7.3",
-    "@uniswap/v2-core": "^1.0.1",
-    "@guildsworn/token-contracts": "^1.0.8"
+    "@uniswap/v2-core": "^1.0.1"
   },
   "devDependencies": {
     "@ethersproject/abi": "^5.4.7",
