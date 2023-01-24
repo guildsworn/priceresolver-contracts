@@ -1,13 +1,12 @@
 # guildsworn-priceresolver-contracts
 
-
-## Installing the package
+# Installing the package
 ```shell
-npm install @guildsworn/token-contracts
+npm install @guildsworn/priceresolver-contracts
 ```
 or via yarn
 ```shell
-yarn add @guildsworn/token-contracts
+yarn add @guildsworn/priceresolver-contracts
 ```
 
 # Compiling, building
@@ -53,6 +52,6 @@ npx hardhat deploy --write true --network oasis_sapphire_mainnet --tags oracle
 
 # Publish the NPM package
 ```shell
-cd contracts/ && yarn prepare
+yarn compile
 yarn publish --access public
 ```
