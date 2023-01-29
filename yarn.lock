@@ -398,14 +398,14 @@
     "@ethersproject/strings" "^5.7.0"
 
 "@guildsworn/hardhat-guildsworn@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@guildsworn/hardhat-guildsworn/-/hardhat-guildsworn-1.0.0.tgz#20f5412858f2a4898152472c24cac01d7d256de3"
-  integrity sha512-DXfIlrM/ScgbcjEQyoVX3FADjJlGhwDTnJgZflLExH/w3eU1XzKic9NnyB9/UnIMQDBPJZy5J5+itd1XSZ2H+Q==
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@guildsworn/hardhat-guildsworn/-/hardhat-guildsworn-1.0.1.tgz#e833f7a612bda02e246acc76f4ee3fa05a11009f"
+  integrity sha512-k1Q/ARsyO9Dh28yMdaoMkU/8AWdTThuBlkvTpdvXwUrnEn3yfVbTwIc+sXluyeoQBckMX6dqK1GtyMuCcwyskw==
 
 "@guildsworn/token-contracts@^1.0.10":
-  version "1.0.11"
-  resolved "https://registry.yarnpkg.com/@guildsworn/token-contracts/-/token-contracts-1.0.11.tgz#30c39666a5cdae1d209ffd3318e6ca1846294806"
-  integrity sha512-4Ec9JvmTyj2gGhNzJLjRssKmnlLU3CyV12NIyYNburVVXUSvh1S9UnV5HOrM2AuOWU2J1y3yaKxeGWJmd84IGA==
+  version "1.0.12"
+  resolved "https://registry.yarnpkg.com/@guildsworn/token-contracts/-/token-contracts-1.0.12.tgz#4fecc1e158772d250fe462cb78adc9f901293fb8"
+  integrity sha512-SdV2/4T+6ow8v1JDNZ/UOCOLd438cSIXM1upYOx0JoN9ZeQXGXYdNz7+C3cz+3imTMicbuFVq4kIUkS1dsefVg==
   dependencies:
     "@openzeppelin/contracts" "^4.7.3"
 
