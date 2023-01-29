@@ -1,6 +1,6 @@
 {
   "name": "@guildsworn/priceresolver-contracts",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "description": "Price resolvers contracts for eldfal",
   "homepage": "https://www.eldfall.com/",
   "repository": {
