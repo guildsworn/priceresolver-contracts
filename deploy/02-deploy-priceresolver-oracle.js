@@ -1,5 +1,3 @@
-//const { loadAllDeployments } = require("hardhat-deploy-ethers/dist/src/helpers")
-
 module.exports = async ({ getNamedAccounts, deployments, network }) => {
     const { deploy, log } = deployments;
     const { deployer } = await getNamedAccounts();
@@ -15,4 +13,4 @@ module.exports = async ({ getNamedAccounts, deployments, network }) => {
     });
     log(`PriceResolverOracleContract Instance at ${deployContract.address}`);    
 }
-module.exports.tags = ["all", "deploy", "oracle", "deploy-oaracle"];
+module.exports.tags = ["all", "deploy", "oracle", "priceresolver", "deploy-priceresolver-oracle"];
