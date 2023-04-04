@@ -13,15 +13,15 @@ module.exports = async ({ getNamedAccounts, deployments, guildsworn }) => {
 
     let tokenPrice = await priceResolverOracleReadInstance.getTokenPrice();
     let stablePrice = await priceResolverOracleReadInstance.getStablePrice();
-    if (tokenPrice != oracleTokenPrice && stablePrice != oracleStablePrice) {
+    if (!tokenPrice.eq(oracleTokenPrice) && !stablePrice.eq(oracleStablePrice)) {
         log(`Setting token and stable price to ${oracleTokenPrice} token price and ${oracleStablePrice} stable price on PriceResolverOracleContract Instance at ${priceResolverOracleReadInstance.address}.`);
         let transactionResponse = await priceResolverOracleWriteInstance.setPrice(oracleTokenPrice, oracleStablePrice);
         await transactionResponse.wait(confirmations);
-    } else if (tokenPrice != oracleTokenPrice) {
+    } else if (!tokenPrice.eq(oracleTokenPrice)) {
         log(`Setting token price to ${oracleTokenPrice} on PriceResolverOracleContract Instance at ${priceResolverOracleReadInstance.address}.`);
         let transactionResponse = await priceResolverOracleWriteInstance.setTokenPrice(oracleTokenPrice);
         await transactionResponse.wait(confirmations);
-    } else if (stablePrice != oracleStablePrice) {
+    } else if (!stablePrice.eq(oracleStablePrice)) {
         log(`Setting stable price to ${oracleStablePrice} on PriceResolverOracleContract Instance at ${priceResolverOracleReadInstance.address}.`);
         let transactionResponse = await priceResolverOracleWriteInstance.setStablePrice(oracleStablePrice);
         await transactionResponse.wait(confirmations);

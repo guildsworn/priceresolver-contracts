@@ -19,7 +19,7 @@
             "name": "oasis_sapphire_testnet oracle-price",
             "skipFiles": ["<node_internals>/**"],
             "runtimeExecutable": "npx",
-            "args": ["hardhat", "deploy", "--network", "oasis_sapphire_testnet", "--write", "true", "--tags", "set-oracle-price"],
+            "args": ["hardhat", "deploy", "--network", "oasis_sapphire_testnet", "--write", "true", "--tags", "set-priceresolver-oracle"],
             "cwd": "${workspaceFolder}"
           },        
           {
