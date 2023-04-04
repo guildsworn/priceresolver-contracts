@@ -54,6 +54,5 @@ npx hardhat deploy --write true --network oasis_sapphire_mainnet --tags oracle
 
 # Publish the NPM package
 ```shell
-yarn compile
-yarn publish --access public
+yarn publish
 ```

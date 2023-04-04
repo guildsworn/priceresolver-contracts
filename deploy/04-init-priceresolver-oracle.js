@@ -2,9 +2,10 @@ module.exports = async ({ getNamedAccounts, deployments, network, guildsworn }) 
     const { log } = deployments;
     const { deployer, admin, moderator } = await getNamedAccounts();
     const confirmations = network.blockConfirmations || 1;
+    let deployerSigner = await ethers.getSigner(deployer);
     
     let priceResolverOracleAddress = await guildsworn.getPriceRosolverOracleAddress();
-    let priceResolverOracleInstance = await ethers.getContractAt("PriceResolverOracleContract", priceResolverOracleAddress, deployer)
+    let priceResolverOracleInstance = await ethers.getContractAt("PriceResolverOracleContract", priceResolverOracleAddress, deployerSigner)
     let isInitialised = await priceResolverOracleInstance.isInitialised();
     if (!isInitialised) { 
         // Initialization

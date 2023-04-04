@@ -28,9 +28,9 @@
             "name": "reset oasis_sapphire_testnet",
             "skipFiles": ["<node_internals>/**"],
             "runtimeExecutable": "npx",
-            "args": ["hardhat", "deploy", "--network", "oasis_sapphire_testnet", "--write", "true", "--tags", "oracle", "--reset"],
+            "args": ["hardhat", "deploy", "--network", "oasis_sapphire_testnet", "--write", "true", "--reset"],
             "cwd": "${workspaceFolder}"
-          },    
+          },
           {
             "type": "node",
             "request": "launch",
