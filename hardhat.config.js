@@ -71,7 +71,7 @@ module.exports = {
           url: `https://testnet.sapphire.oasis.dev`,
           chainId: 23295,
           accounts: ACCOUNTS,
-          live: true,
+          live: false,
           saveDeployments: true,
           blockConfirmations: 2,
           tags: ["test", "oasis", "testnet"]
