@@ -52,6 +52,16 @@ npx hardhat deploy --write true --network oasis_sapphire_testnet --tags oracle
 npx hardhat deploy --write true --network oasis_sapphire_mainnet --tags oracle
 ```
 
+## Verify contract for testnet
+```shell
+yarn hardhat --network oasis_sapphire_testnet sourcify
+```
+
+## Verify contract for mainnet
+```shell
+yarn hardhat --network oasis_sapphire_mainnet sourcify
+```
+
 # Publish the NPM package
 ```shell
 yarn publish
