@@ -49,7 +49,7 @@ npx hardhat deploy --write true --network oasis_sapphire_testnet --tags oracle
 
 ## Deploy on Oasis Sapphire Mestnet, generate deployment files
 ```shell
-npx hardhat deploy --write true --network oasis_sapphire_mainnet --tags oracle
+npx hardhat deploy --write true --network oasis_sapphire_mainnet
 ```
 
 ## Verify contract for testnet
